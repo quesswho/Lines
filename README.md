@@ -1,2 +1,2 @@
 # Lines
-Lots of lines rendered in a progra,
+Lots of lines rendered in a program.
