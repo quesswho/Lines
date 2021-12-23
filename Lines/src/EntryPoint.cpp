@@ -2,8 +2,6 @@
 #include "Window.h"
 #include <math.h>
 
-// 38.04 39, 51, 72, 124, 249, 501
-
 struct Vec2 {
 	float m_x, m_y;
 	Vec2(float x, float y)
@@ -34,7 +32,6 @@ int main() {
 	//Calculate all positions in a circle
 	for (int i = 0; i < LINES; i++) {
 		locations[i] = Vec2(RADIUS*cos(degree * PI / 180.0), RADIUS*sin(degree * PI / 180.0));
-		//std::cout << RADIUS * cos(degree * PI / 180.0) << ", " << RADIUS*sin(degree * PI / 180.0) << std::endl;
 		degree += addDegree;
 	}
 
@@ -49,12 +46,6 @@ int main() {
 	while (!window->Closed())
 	{
 		window->Clear();
-		for (int i = 0; i < LINES-1; i++) //circle
-		{
-			//drawLine(0, 0, locations[i].m_x, locations[i].m_y);
-			//drawLine(locations[i].m_x, locations[i].m_y, locations[i+1].m_x, locations[i+1].m_y);
-		}
-
 		for (int i = 0; i < LINES; i++)
 		{
 			if (i*multiply <= LINES && multiply>=0)
@@ -72,7 +63,6 @@ int main() {
 				drawLine(locations[i].m_x, locations[i].m_y, locations[int(j-1)].m_x, locations[int(j-1)].m_y);
 			}
 		}
-
 		glColor3f(1, 0, 0);
 		window->Update();
 		multiply = window->value;

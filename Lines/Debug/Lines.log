@@ -1,4 +1,0 @@
-﻿  EntryPoint.cpp
-c:\users\sebastian\source\repos\lines\lines\src\entrypoint.cpp(32): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\sebastian\source\repos\lines\lines\src\entrypoint.cpp(36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Lines.vcxproj -> C:\Users\Sebastian\source\repos\Lines\Debug\Lines.exe
